@@ -153,7 +153,7 @@ function App() {
           <div className="panel-header">
             <div className="panel-intro">
               <p className="section-kicker">Playable proof</p>
-              <h2>Find the hidden number.</h2>
+              <h2>Find the hidden number</h2>
               <p className="panel-summary">
                 Use each hint to tighten the range and finish the round in as few attempts
                 as possible.

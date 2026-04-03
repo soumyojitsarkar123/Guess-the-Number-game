@@ -2,19 +2,19 @@
 
 :root {
   color-scheme: dark;
-  --bg: #05070a;
+  --bg: #080a0f;
   --surface: rgba(16, 21, 29, 0.7);
-  --surface-blur: blur(16px);
-  --glass-border: 1px solid rgba(255, 255, 255, 0.1);
-  --line: rgba(255, 255, 255, 0.08);
-  --text: #ffffff;
-  --muted: #94a3b8;
-  --accent: #f59e0b;
-  --accent-glow: rgba(245, 158, 11, 0.3);
-  --gradient: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
-  --success: #10b981;
-  --danger: #ef4444;
-  --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  --surface-blur: blur(14px);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+  --line: rgba(255, 255, 255, 0.06);
+  --text: #f2ede4;
+  --muted: #aea696;
+  --accent: #c99635;
+  --accent-glow: rgba(201, 150, 53, 0.2);
+  --gradient: linear-gradient(180deg, #ddb253, #c99635);
+  --success: #2f6f57;
+  --danger: #8f4d46;
+  --shadow-lg: 0 28px 72px rgba(0, 0, 0, 0.4);
 }
 
 * {
@@ -31,11 +31,10 @@ body,
 
 body {
   background: 
-    radial-gradient(circle at 0% 0%, rgba(245, 158, 11, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 100% 100%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 0% 0%, rgba(201, 150, 53, 0.03) 0%, transparent 50%),
     var(--bg);
   color: var(--text);
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
   overflow-x: hidden;
   position: relative;
 }
@@ -123,16 +122,17 @@ button {
 }
 
 .intro-panel h1 {
-  font-family: 'Outfit', sans-serif;
-  font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
   max-width: 8ch;
   font-size: clamp(3rem, 4.5vw, 4.8rem);
-  line-height: 1.1;
-  letter-spacing: -0.01em;
-  background: linear-gradient(to bottom right, #fff 40%, rgba(255, 255, 255, 0.7));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  line-height: 0.92;
+  letter-spacing: -0.055em;
+  color: var(--text);
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  -webkit-text-fill-color: initial;
 }
 
 .intro-copy {
@@ -190,10 +190,10 @@ button {
 .panel-header h2 {
   margin-top: 4px;
   font-size: clamp(1.8rem, 2.3vw, 2.4rem);
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 600;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
 }
 
 .panel-summary {
@@ -253,10 +253,10 @@ button {
 }
 
 .hud-item strong {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 1.8rem;
-  font-weight: 700;
-  letter-spacing: -0.03em;
+  font-weight: 800;
+  letter-spacing: -0.04em;
 }
 
 .feedback-panel {
@@ -319,13 +319,13 @@ button {
   height: 64px;
   padding: 0 24px;
   border-radius: 20px;
-  border: 2px solid rgba(245, 158, 11, 0.2);
-  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(201, 150, 53, 0.4);
+  background: rgba(255, 255, 255, 0.02);
   color: var(--text);
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 1.6rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-weight: 700;
+  letter-spacing: -0.04em;
   outline: none;
   transition: all 0.3s ease;
 }
@@ -352,12 +352,12 @@ button {
   padding: 0 24px;
   border-radius: 20px;
   background: var(--gradient);
-  color: #000;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 700;
-  font-size: 1.05rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  color: #17120a;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: 1rem;
+  text-transform: none;
+  letter-spacing: 0;
   box-shadow: 0 4px 15px -1px var(--accent-glow);
 }
 
@@ -391,13 +391,14 @@ button {
   display: block;
   margin: 12px 0 8px;
   font-size: 2.2rem;
-  letter-spacing: 0.02em;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 700;
-  background: linear-gradient(to right, var(--accent), #fbbf24);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.04em;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  color: var(--accent);
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  -webkit-text-fill-color: initial;
 }
 
 .range-copy p,

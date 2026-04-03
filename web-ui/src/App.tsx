@@ -145,7 +145,7 @@ function App() {
           </div>
 
           <p className="signature">
-            Built from a simple Python loop and refined by <strong>Soumyojit Sarkar</strong>.
+            Built from a simple Python loop and refined by <strong style={{ whiteSpace: 'nowrap' }}>Soumyojit Sarkar</strong>.
           </p>
         </section>
 

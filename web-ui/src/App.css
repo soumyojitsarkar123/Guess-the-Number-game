@@ -132,9 +132,9 @@ button {
   font-weight: 800;
   max-width: 8ch;
   font-size: clamp(3.2rem, 4.5vw, 4.8rem);
-  line-height: 0.98;
+  line-height: 1.1;
   letter-spacing: -0.04em;
-  background: linear-gradient(135deg, #f2ede4 15%, #c99635 100%);
+  background: linear-gradient(135deg, #ffffff 10%, #fbd58e 55%, #c99635 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -220,18 +220,22 @@ button {
 }
 
 .ghost-button {
-  min-height: 56px;
-  padding: 0 22px;
+  min-height: 52px;
+  padding: 0 24px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.02);
-  border: 1px solid var(--line);
-  color: var(--text);
+  border: 1px solid rgba(201, 150, 53, 0.5);
+  color: #f2ede4;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 0.94rem;
   white-space: nowrap;
 }
 
 .ghost-button:hover {
   transform: translateY(-1px);
-  border-color: var(--line-strong);
+  border-color: var(--accent);
+  background: rgba(201, 150, 53, 0.05);
 }
 
 .hud-grid {
